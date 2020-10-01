@@ -1,4 +1,4 @@
-package com.udacity.pricing.entity;
+package com.udacity.pricing.domain;
 
 import java.math.BigDecimal;
 import javax.persistence.Entity;
