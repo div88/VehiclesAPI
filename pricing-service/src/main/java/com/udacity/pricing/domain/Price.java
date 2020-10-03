@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Entity
 public class Price {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String currency;
     private BigDecimal price;
@@ -20,7 +20,7 @@ public class Price {
     public Price() {
     }
 
-    public Price(String currency, BigDecimal price, Long vehicleId) {
+    public Price(Long vehicleId, String currency, BigDecimal prices) {
         this.currency = currency;
         this.price = price;
         this.vehicleId = vehicleId;
